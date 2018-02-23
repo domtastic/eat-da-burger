@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="https://trippyburger.com/wp-content/uploads/2017/02/TRIPPY-BURGER-BURGER-LOGO-COLOR.jpg" alt="trippy burger">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Eat - Da - Burger</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <h2>Burgers to eat!</h2>
+                <ul>
+                    {{#each cats}} {{#unless sleepy}} {{> cats/cat-block sleep=true}} {{/unless}} {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+</div>
